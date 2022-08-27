@@ -4,6 +4,6 @@ export const selectAllPartners = () => {
     return PARTNERS;
 };
 
-export const selectFeaturedPartner = () => {
-    return PARTNERS.find((partners) => partners.featured)
-}
+export const selectFeaturedPartner = (id) => {
+    return PARTNERS.find((partner) => partner.id === parseInt(id));
+};
